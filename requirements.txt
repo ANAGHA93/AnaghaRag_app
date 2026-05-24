@@ -1,9 +1,10 @@
 streamlit
 openai
 python-dotenv
-langchain
-langchain-community
-langchain-openai
+langchain==0.3.25
+langchain-community==0.3.24
+langchain-openai==0.3.17
+langchain-text-splitters==0.3.8
 chromadb
 pypdf
 tiktoken
