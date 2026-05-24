@@ -109,7 +109,7 @@ if uploaded_file:
     # -----------------------------------
 
     embeddings = AzureOpenAIEmbeddings(
-        azure_endpoint=os.getenv("AZURE_ENDPOINT"),
+        azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
         api_key=os.getenv("AZURE_OPENAI_API_KEY"),
         azure_deployment=os.getenv("EMBEDDING_MODEL_NAME"),
         api_version=os.getenv("api_version_embedding")
@@ -171,7 +171,7 @@ Answer:
     # -----------------------------------
 
     llm = AzureChatOpenAI(
-        azure_endpoint=os.getenv("AZURE_ENDPOINT"),
+        azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
         api_key=os.getenv("AZURE_OPENAI_API_KEY"),
         azure_deployment=os.getenv("CHAT_MODEL_NAME"),
         api_version=os.getenv("api_version"),
