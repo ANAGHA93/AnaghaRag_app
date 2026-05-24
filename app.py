@@ -112,7 +112,7 @@ if uploaded_file:
         azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
         api_key=os.getenv("AZURE_OPENAI_API_KEY"),
         azure_deployment=os.getenv("EMBEDDING_MODEL_NAME"),
-        api_version=os.getenv("api_version_embedding")
+        api_version=os.getenv("AZURE_OPENAI_API_VERSION")
     )
 
     # -----------------------------------
@@ -174,9 +174,10 @@ Answer:
         azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
         api_key=os.getenv("AZURE_OPENAI_API_KEY"),
         azure_deployment=os.getenv("CHAT_MODEL_NAME"),
-        api_version=os.getenv("api_version"),
+        api_version=os.getenv("AZURE_OPENAI_API_VERSION"),
         temperature=0
     )
+
 
     # -----------------------------------
     # CREATE STRICT RAG CHAIN
