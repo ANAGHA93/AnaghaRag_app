@@ -1,0 +1,13 @@
+.env
+venv/
+venv_hyde/
+.venv/
+
+__pycache__/
+*.pyc
+
+.chromadb/
+
+.idea/
+
+*.sqlite3
